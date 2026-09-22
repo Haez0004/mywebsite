@@ -1,18 +1,20 @@
 {
-  "name": "HAEZ Portfolio",
-  "short_name": "HAEZ",
-  "start_url": "/",
+  "name": "Haez Portfolio",
+  "short_name": "Haez",
+  "description": "Haez Portfolio",
+  "start_url": "/mywebsite/",
+  "scope": "/mywebsite/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "https://avatars.githubusercontent.com/u/000000?v=4",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "https://avatars.githubusercontent.com/u/000000?v=4",
       "sizes": "512x512",
       "type": "image/png"
     }
