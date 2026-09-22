@@ -1,104 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>HAEZ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HAEZ - Frontend Developer</title>
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-512.png">
-<meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f5f5f5}
+header{background:#000;color:#fff;padding:14px;text-align:center;position:sticky;top:0;z-index:10}
+header b{font-size:22px;letter-spacing:3px;display:block}
+nav{display:flex;justify-content:center;gap:16px;margin:10px 0;font-size:14px}
+nav a{color:#fff;text-decoration:none}
+.btn-green{background:#25D366;color:#fff;padding:7px 18px;border-radius:20px;text-decoration:none;font-weight:bold;font-size:13px;display:inline-block}
+.card{background:#fff;margin:12px;border-radius:18px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.btn-black{background:#000;color:#fff;padding:10px 22px;border-radius:25px;border:none;margin:5px;font-weight:bold}
+.btn-white{background:#fff;color:#000;border:1.5px solid #000;padding:10px 22px;border-radius:25px;margin:5px;font-weight:bold}
+.skill{border:1px solid #eee;padding:12px;margin:8px 0;border-radius:12px}
+</style>
 </head>
-
 <body>
 
-   <header>
-    <h1>HAEZ</h1>
-    <p>Welcome to my world!</p>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-<a href="files">Files</a>
-        <a href="#contact">contact</a>   
-   </nav>
-
+<header>
+<b>HAEZ</b>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Files</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="btn-green" href="https://wa.me/2348128210500?text=Hi%20HAEZ%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20hire%20you!">HIRE ME</a>
 </header>
 
-    <section class="hero" id="home">
+<div id="home" class="card">
+<h1 style="font-size:26px;">Hello, I'm HAEZ</h1>
+<p style="margin:10px 0;color:#666;">Your creative frontend developer!</p>
+<button class="btn-black" onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
+<a href="my-cv.pdf" download><button class="btn-white">Download CV</button></a>
+</div>
 
-    <h2>Hello, I'm HAEZ</h2>
+<div id="about" class="card">
+<h2>About Me</h2>
+<p style="margin-top:10px;line-height:1.6;color:#444">I'm HAEZ, a Frontend Developer & Creative Designer from Nigeria building fast, offline-ready websites. Specialized in PWA, responsive design, and converting ideas into digital products. Open to remote roles.</p>
+</div>
 
-    <p>
-        Welcome to my World.
-    </p>
+<div class="card">
+<h2>My Skills</h2>
+<div class="skill">✅ Frontend - React, HTML, CSS, PWA</div>
+<div class="skill">✅ Responsive & Offline-Ready Design</div>
+<div class="skill">✅ Creative Design & Digital Products</div>
+</div>
 
-    <button onclick="showMessage()">Learn More</button>
-<p id="message" style="margin-top:15px; color:#333; font-weight:bold font-size:18px;"></p>
+<div id="projects" class="card">
+<h2>My Files & Projects</h2>
+<p style="color:#666;margin:10px 0;">Browse and download my work:</p>
+<div class="skill">PDF Document<br><br><a class="btn-black" href="my-cv.pdf" style="text-decoration:none;">View / Download</a></div>
+<div class="skill">MP3 Audio<br><br><button class="btn-black">Listen</button></div>
+<div class="skill">JPG Image<br><br><button class="btn-black">View Image</button></div>
+</div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I'm HAEZ, a creative person learning web development
-        and building websites.
-    </p>
-</section>
+<div id="contact" class="card">
+<h2>Contact Me</h2>
+<p style="margin:10px 0;color:#666;">You can contact me for projects, ideas and collaborations.</p>
+<a class="btn-green" href="https://wa.me/2348128210500?text=Hi%20HAEZ%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20hire%20you!" style="padding:12px 25px;">💬 Message me on WhatsApp</a>
+</div>
 
-       <section id="skills">
-  <h2>My Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Web Development</h3>
-      <p>Building modern, responsive websites.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Creative Content</h3>
-      <p>Creating ideas, visual content and engaging projects for digital platforms.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Digital Solutions</h3>
-      <p>Helping brands grow online with smart design.</p>
-    </div>
-</section>
+<div style="text-align:center;padding:15px;color:#888;font-size:12px;">© 2026 HAEZ. All rights reserved.</div>
 
-<section id="files">
-  <h2>My Files & Projects</h2>
-  <p>Browse and download my work:</p>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>My CV</h3>
-      <p style="font-size:13px;color:#666;">PDF Document</p>
-      <a href="files/My-CV.pdf" class="file-btn" target="_blank">View / Download</a>
-    </div>
-    <div class="skill-card">
-      <h3>Music Sample</h3>
-      <p style="font-size:13px;color:#666;">MP3 Audio</p>
-      <a href="files/my-song.mp3" class="file-btn" target="_blank">Listen</a>
-    </div>
-    <div class="skill-card">
-      <h3>My Design</h3>
-      <p style="font-size:13px;color:#666;">JPG Image</p>
-      <a href="files/my-design.jpg" class="file-btn" target="_blank">View Image</a>
-    </div>
-  </div>
-</section>
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>You can contact me for projects, ideas and collaborations.</p>
-  <a href="https://wa.me/2348128210500?text=Hello%20HAEZ%20I%20saw%20your%20portfolio" class="whatsapp-btn" target="_blank">💬 Message me on WhatsApp</a>
-</section>
-
-<footer>
-  <p>2026 HAEZ. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
+</script>
 </body>
 </html>
-<script>
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js');
-}
-</script>
