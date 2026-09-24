@@ -9,5 +9,14 @@
   </head>
   <body>
     <div id="root"></div>
+    <button onclick="clearAll()" style="position:fixed;bottom:20px;right:20px;z-index:9999;background:#ef4444;color:white;border:0;padding:12px 18px;border-radius:10px;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.3)">Clear All 🗑️</button>
+<script>
+function clearAll(){
+  if(confirm('Clear ALL expenses? This cannot be undone!')){
+    localStorage.clear();
+    location.reload();
+  }
+}
+</script>
   </body>
 </html>
