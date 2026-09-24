@@ -13,16 +13,16 @@ jobs:
         with:
           node-version: 20
       - name: Build tracker
-        working-directory: ./expense-tracker
         run: |
+          cd expense-tracker
           npm install
           npm run build
-          cp -r dist/ .*
+          cp -r dist/*.
           rm -rf dist
       - name: Push build
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add expense-tracker/
-          git commit -m "auto build [skip ci]" || exit 0
+          git add expense-tracker
+          git commit -m "auto build" || exit 0
           git push
