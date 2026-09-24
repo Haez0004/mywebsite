@@ -1,0 +1,19 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: cd expense-tracker && npm install && npm run build
+      - run: |
+          git config user.name "haez"
+          git config user.email "haez@github.com"
+          git add expense-tracker/dist -f || git add expense-tracker -f
+          git commit -m "build" || echo "no changes"
+          git push
