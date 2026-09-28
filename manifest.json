@@ -1,0 +1,16 @@
+{
+  "name": "Haez Portfolio",
+  "short_name": "Haez",
+  "start_url": "/mywebsite/",
+  "scope": "/mywebsite/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "https://haez0004.github.io/mywebsite/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
