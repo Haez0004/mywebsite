@@ -3,66 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HAEZ - Frontend Developer</title>
-<meta name="description" content="Haez - Frontend Developer from Kaduna building fast websites with Tailwind + JS">
-<meta property="og:title" content="Haez | Frontend Developer">
-<meta property="og:description" content="I build fast, responsive websites">
-<meta property="og:image" content="https://haez0004.github.io/mywebsite/haez.jpg">
-<meta property="og:url" content="https://haez0004.github.io/mywebsite/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="./src/output.css">
+<title>Haez | I build fast websites</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>html{scroll-behavior:smooth}</style>
 </head>
-<body>
+<body class="bg-[#0f172a] text-white">
 
-<header>
-<nav class="flex justify-between items-center p-4 bg-gray-900 text-white">
-  <h1 class="font-bold">Haez</h1>
-  <div class="flex gap-6">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+<nav class="flex justify-between items-center px-6 md:px-12 py-5 max-w-7xl mx-auto">
+  <a class="text-xl font-bold text-cyan-400">Haez</a>
+  <div class="flex gap-6 text-sm">
+    <a href="#about" class="hover:text-cyan-400">About</a>
+    <a href="#projects" class="hover:text-cyan-400">Projects</a>
   </div>
 </nav>
-<a class="bg-green-500 text-white px-4 py-2 rounded" href="https://wa.me/2348128210500">WhatsApp</a>
-</header>
 
-<section class="min-h-screen flex items-center bg-gray-50">
- <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 p-6">
-  <div class="text-center md:text-left">
-    <h1 class="text-5xl md:text-6xl font-bold leading-tight">I build <br><span class="text-cyan-400">fast websites</span></h1>
-    <div class="mt-8 flex gap-4 justify-center md:justify-start">
-      <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded">View My Work</a>
-      <a href="#contact" class="border border-white px-6 py-3 rounded">Contact</a>
+<section class="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">I build<br><span class="text-cyan-400">fast websites</span></h1>
+    <p class="mt-4 text-slate-300">Frontend developer from Kaduna. Tailwind + JS + React.</p>
+    <div class="mt-6 flex gap-3">
+      <a href="#projects" class="bg-cyan-400 text-black px-5 py-2.5 rounded font-semibold">See My Work</a>
+      <a href="#contact" class="border border-slate-600 px-5 py-2.5 rounded">Contact</a>
     </div>
   </div>
-  <div class="flex justify-center">
-    <img src="https://via.placeholder.com/300" class="rounded-full w-72 h-72 object-cover">
+  <div class="relative flex justify-center">
+    <div class="absolute w-72 h-72 bg-blue-600 rounded-full blur-[70px] opacity-30"></div>
+    <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Haez" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_30px_rgba(34,211,238,0.5)]">
   </div>
- </div>
 </section>
 
-<div id="projects" class="p-6 max-w-6xl mx-auto">
-<h2>My Projects</h2>
-<p>Browse and download my work:</p>
+<section id="projects" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+  <h2 class="text-2xl font-bold mb-6">My Projects</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-slate-800 p-6 rounded-xl"><h3 class="font-bold text-cyan-400">My Portfolio Website PWA</h3><p class="text-sm text-slate-300 mt-2">Browse and download my work. PWA installable.</p></div>
+    <div class="bg-slate-800 p-6 rounded-xl"><h3 class="font-bold text-cyan-400">Haez Expense Tracker PWA</h3><p class="text-sm text-slate-300 mt-2">Offline-first expense tracker. No backend.</p></div>
+  </div>
+</section>
 
-<div style="border:1px solid #ddd; padding:15px; margin-bottom:15px;">
-<h3>My Portfolio Website PWA</h3>
-<p>My personal portfolio, installable as app.</p>
-<p><small>Stack: HTML, CSS, JavaScript, PWA</small></p>
-<a href="https://haez0004.github.io/mywebsite/" target="_blank">Live</a> | <a href="https://github.com/Haez0004/mywebsite" target="_blank">Code</a>
-</div>
-
-<div style="border:1px solid #ddd; padding:15px;">
-<h3>Haez Expense Tracker PWA</h3>
-<p>Offline-first expense tracker.</p>
-<p><small>Stack: HTML, CSS, JS, LocalStorage, PWA</small></p>
-<a href="https://haez0004.github.io/expense-tracker/" target="_blank">Live</a> | <a href="https://github.com/Haez0004/expense-tracker" target="_blank">Code</a>
-</div>
-</div>
-
-<div id="contact" class="p-6">
-<h2>Contact</h2>
-<p>Email: haez@example.com</p>
-</div>
-
+<footer id="contact" class="text-center py-10 text-slate-400 text-sm">Contact: haez@example.com</footer>
 </body>
 </html>
